@@ -118,7 +118,7 @@ export default function Index() {
                         </span>
                     </div>
 
-                    <div className="relative flex w-full ml-7">
+                    <div className="h-full overflow-y-visible relative flex w-full ml-7">
                         <input
                             type="text"
                             placeholder="Add your task"
