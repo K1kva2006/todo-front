@@ -5,11 +5,12 @@ import axios from "axios";
 import InputTemplate from "../components/InputTemplate";
 
 export default function Register() {
+    const profileNavigate = useNavigate()
     useEffect(() => {
         if (localStorage.getItem("authToken")) return profileNavigate("/");
     }, []);
 
-    const navigateToLogin = useNavigate()
+   const navigateToLogin = useNavigate()
 
     const [emailValue, setEmailValue] = useState("");
     const [passwordValue, setPasswordValue] = useState("");
