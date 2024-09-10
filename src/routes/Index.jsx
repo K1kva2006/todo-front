@@ -138,7 +138,7 @@ export default function Index() {
                         <p ref={resStatusRef} className="absolute top-16">
                             {resStatus}
                         </p>
-                        <div className="h-screen mt-24 flex flex-col overflow-y-visible">
+                        <div className="h-96 mt-24 flex flex-col overflow-y-visible">
                             {userData.todoList?.map((item, index) => {
                                 return (
                                     <div
