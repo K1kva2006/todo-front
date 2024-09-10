@@ -2,7 +2,7 @@ import { useState, useEffect, createContext } from "react";
 import { Routes, Route } from "react-router-dom";
 
 import axios from "axios";
-axios.defaults.baseURL = "http://localhost:3069"
+axios.defaults.baseURL = "https://todo-back-3ptp.onrender.com"
 
 import Index from "./routes/Index";
 import Register from "./routes/Register";
