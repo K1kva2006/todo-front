@@ -118,7 +118,7 @@ export default function Index() {
                         </span>
                     </div>
 
-                    <div className="h-full overflow-y-visible relative flex w-full ml-7">
+                    <div className="relative flex w-full ml-7">
                         <input
                             type="text"
                             placeholder="Add your task"
@@ -138,7 +138,7 @@ export default function Index() {
                         <p ref={resStatusRef} className="absolute top-16">
                             {resStatus}
                         </p>
-                        <div className="h-96 mt-24 flex flex-col overflow-y-visible">
+                        <div className="mt-24 flex flex-col overflow-y-visible">
                             {userData.todoList?.map((item, index) => {
                                 return (
                                     <div
