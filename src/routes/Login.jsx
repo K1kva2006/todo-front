@@ -5,6 +5,7 @@ import axios from "axios";
 import InputTemplate from "../components/InputTemplate";
 
 export default function Login() {
+    const profileNavigate = useNavigate();
     useEffect(() => {
         if (localStorage.getItem("authToken")) return profileNavigate("/");
     }, []);
@@ -14,8 +15,6 @@ export default function Login() {
 
     const [resStatus, setResStatus] = useState("");
     const resStatusRef = useRef(null);
-
-    const profileNavigate = useNavigate();
 
     return (
         <>
